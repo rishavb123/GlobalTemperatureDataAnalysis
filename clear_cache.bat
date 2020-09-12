@@ -1,0 +1,1 @@
+@deldir __pycache__
