@@ -38,6 +38,12 @@ def smooth(ys, starting_point_ratio=0.3):
 def smooth_with_custom_ratio(starting_point_ratio=0.3):
     return lambda ys: smooth(ys, starting_point_ratio=starting_point_ratio)
 
+def running_average(ys, l=3):
+    return [np.mean(ys[i : i + l]) for i in range(len(ys))]
+
+def running_average_with_custom_length(l):
+    return lambda ys: running_average(ys, l=l)
+
 def composite(*transforms):
     def transform(ys):
         for t in transforms:
