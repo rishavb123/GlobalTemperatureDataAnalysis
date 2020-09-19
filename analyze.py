@@ -19,7 +19,7 @@ data = np.mean(data_wrapper.get_data_matrix(), axis=1)
 data = [d for d in data if not np.isnan(d)]
 deg = 5
 l = 15
-ts = (None, smooth, running_average_with_custom_length(l), polyfit(1), polyfit(deg), composite(polyfit(deg), safe_log), composite(shift(2), ratios, remove_outliers), composite(shift(2), polyfit(deg), ratios, remove_outliers))
+ts = (None, smooth, running_average_with_custom_length(l), polyfit(1), polyfit(deg), composite(shift(2), safe_log, polyfit(deg)), composite(shift(2), ratios, remove_outliers), composite(shift(2), polyfit(deg), ratios, remove_outliers))
 names = ("Temperature in C (shifted down by 8.61)", 'Smoothed', 'Running Average with Length ' + str(l), 'Linear Regression', 'Polyfit of Degree ' + str(deg), 'Log of polyfit', 'Ratios', 'Ratios on Polyfit')
 
 s = (3, 3)
