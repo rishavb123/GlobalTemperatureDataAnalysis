@@ -1,0 +1,8 @@
+Mean of Temperature in C (shifted down by 8.61) -0.06824352750809057
+Mean of Smoothed -0.06824352750809061
+Mean of Running Average with Length 15 -0.016861389165940217
+Mean of Linear Regression -0.06824352750809029
+Mean of Polyfit of Degree 5 -0.06824352750808954
+Mean of Polyfit of Log 0.5762178741902373
+Mean of Ratios 1.0711150495755373
+Mean of Ratios on Polyfit 1.0041379348080266
